@@ -1,0 +1,93 @@
+animation.html
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style type="text/css">
+
+
+	#bluebox{
+
+		height:100px;
+		width:100px;
+		background-color:blue;
+		border:5px solid black;
+		background-image:url(https://cdn.nba.com/manage/2023/10/GettyImages-1702012503-scaled-e1696265868270-784x479.jpg);
+
+		animation-name: dance;
+		animation-iteration-count: infinite;
+		animation-duration:4s; 
+
+
+
+	}
+
+
+	@keyframes dance{
+		
+
+	0%{
+	width:100px;
+	height:100px;
+	left:0px;
+
+}
+
+50%{
+
+	width:500px;
+	height:500px;
+	transform:rotate(360deg);
+	border-radius:75%
+	border:25px solid black;
+	left:700px;
+
+
+
+
+
+
+
+}
+
+
+
+		100%{
+	width:100px;
+	height:100px;
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<div id="bluebox"></div>
+
+
+</body>
+</html>
