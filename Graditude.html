@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style type="text/css">
+
+
+#noah1{
+	width:325px;
+	height:325px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVEKW6ibhwHjG1Vx-9AuR6G_BR_nKn095Zw&usqp=CAU);
+	background-size: cover;
+	
+}
+
+#noah2{
+	width:325px;
+	height:325px;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoVEKW6ibhwHjG1Vx-9AuR6G_BR_nKn095Zw&usqp=CAU);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-reeat;
+}
+
+</style>
+
+
+
+
+
+</head>
+<body>
+
+	<div id="noah1" ></div>
+
+	<div id="noah2" ></div>
+
+<script type="text/javascript">
+
+
+	var clickCounter = 0;
+
+	document.addEventListener("click", function countClicks(){
+		clickCounter = clickCounter +1;
+		console.log(clickCounter)
+
+		if (clickCounter ==1)
+		{
+			noah1.style.backgroundImage = "url(noah1.png)"
+		}
+
+		if (clickCounter ==2)
+		{
+			noah2.style.backgroundImage = "url(noah2.png)"
+		}
+
+
+
+	})
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
