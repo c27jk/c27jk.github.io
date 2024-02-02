@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	#car{
+		width:200px;
+		height:200px;
+		background-image:url(shelbycobra.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+
+	}
+
+</style>
+
+
+</head>
+<body>
+
+<div id="car"></div>
+<script type="text/javascript">
+	
+	document.addEventListener("keydown", 
+		function(event){console.log(event){
+
+			if (event.key=="ArrowRight") {
+
+				x=x+10
+				car.style.left = x+'px';
+			}
+			if (event.key==ArrowLeft) {
+				x=x-10
+				car.stlye.left = x+px;
+			}
+
+			if (evet.key==ArrowUp) {
+				y=y-10
+				car.style.top = y+'px'
+
+			}
+
+			
+
+		}
+		
+	})
+</script>
+
+
+</body>
+</html>
