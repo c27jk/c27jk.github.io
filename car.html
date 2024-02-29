@@ -1,52 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	
 
 <style type="text/css">
+
+
 	#car{
 		width:200px;
 		height:200px;
 		background-image:url(shelbycobra.png);
 		background-size: contain;
 		background-repeat: no-repeat;
+		position: absolute;
+		top:625px;
 
 
 	}
+	body{
+		margin:0px;
+		background-image: url("road.png");
+		background-size: cover;
+
+		}
+		
+
+
+	#backbutton{
+		width:40px;
+		height:15px;
+		background-color: white;
+		position:absolute;
+		left:0px;
+		top: 0px;
+		z-index: 10;
+
+}
 
 </style>
 
 
 </head>
 <body>
+<a href="index.html">
+<div id="backbutton">Home</div>
+</a>
+
+
 
 <div id="car"></div>
 <script type="text/javascript">
-	
+	var x=0
+	var y=625
 	document.addEventListener("keydown", 
-		function(event){console.log(event){
+		function(event){
+			console.log(event)
 
 			if (event.key=="ArrowRight") {
 
 				x=x+10
 				car.style.left = x+'px';
 			}
-			if (event.key==ArrowLeft) {
+			if (event.key=="ArrowLeft") {
 				x=x-10
-				car.stlye.left = x+px;
+				car.style.left = x+'px';
 			}
 
-			if (evet.key==ArrowUp) {
+			if (event.key=="ArrowUp") {
 				y=y-10
-				car.style.top = y+'px'
-
+				car.style.top = y+'px' 
 			}
 
-			
+			if (event.key=="ArrowDown") {
+				y=y+10
+				car.style.top = y+'px'}
+		})
 
-		}
-		
-	})
+
 </script>
 
 

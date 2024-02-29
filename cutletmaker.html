@@ -1,4 +1,4 @@
-cutletmaker.html
+
 
 <!DOCTYPE html>
 <html>
@@ -7,6 +7,15 @@ cutletmaker.html
 
 <style type="text/css">
 	
+
+	#bread{width:1000px;
+		height:600px;
+		background-image:url(bread.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+
+	}
+
 
 	.topping{width: 200px;
 		height: 200px;
@@ -49,6 +58,8 @@ cutletmaker.html
 #proscuito{
 		background-image: url(proscuito.png)
 	}
+
+
 </style>
 
 
@@ -56,6 +67,11 @@ cutletmaker.html
 
 </head>
 <body>
+
+
+
+
+
 
 <div id= "basil" class="topping"></div>
 <div id= "muzzerela" class="topping"></div>
@@ -65,12 +81,14 @@ cutletmaker.html
 <div id= "glaze" class="topping"></div>
 <div id= "proscuito" class="topping"></div>
 <div id= "pepper" class="topping"></div>
-
+<div id= "bread"></div>
 
 
 
 
 <script type="text/javascript">
+	
+
 	var image;
 	basil.addEventListener("click", function(){
 		image ="url(basil.png)"
@@ -108,7 +126,18 @@ var image;
 	basil.addEventListener("click", function(){
 		image ="url(basil.png)"
 		console.log(image)
+})
+var image;
+	proscuito.addEventListener("click", function(){
+		image ="url(proscuito.png)"
+		console.log(image)
 
+})
+
+var image;
+	glaze.addEventListener("click", function(){
+		image ="url(balsamicglaze.png)"
+		console.log(image)
 	})
 </script>
 
